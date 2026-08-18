@@ -189,8 +189,8 @@ def game_over():
     game_over_text = FONT.render("GAME OVER", True, (200, 200, 200))
     score_text = FONT.render("YOUR SCORE IS : " + str(score_value), True, (200, 200, 200))
     WINDOW.fill((0, 0, 0))
-    WINDOW.blit(game_over_text, ((SCREENWIDTH / 2 - game_over_text.get_width() / 2), SCREENHEIGHT / 2 + 50))
-    WINDOW.blit(score_text, ((SCREENWIDTH / 2 - score_text.get_width() / 2), SCREENHEIGHT / 2 - 50))
+    WINDOW.blit(game_over_text, ((SCREENWIDTH / 2 - game_over_text.get_width() / 2), SCREENHEIGHT / 2 - 50))
+    WINDOW.blit(score_text, ((SCREENWIDTH / 2 - score_text.get_width() / 2), SCREENHEIGHT / 2 - 100))
 
     pygame.display.update()
     time.sleep(5)
